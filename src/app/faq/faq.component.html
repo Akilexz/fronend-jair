@@ -1,0 +1,45 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Ordenes De Gasto</h4>
+                <p class="card-category">Sistema para generar ordesnes de pagos ESPE.</p>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <th>ord</th>
+                    <th>descripcion</th>
+                    <th>cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Subtotal</th>
+                    <th>iva</th>
+                    <th>otros impuestos</th>
+                    <th>Total</th>
+                    <th>codigo Presupuestario</th>
+                    <th>descripcion del item presupuestario</th>
+                    <th>valor</th>
+                    <th>gasto a afectuar</th>
+                    <th>saldo</th>
+                    <th></th>
+                    <th></th>
+    
+                    <tr *ngFor="let ordenGasto of ordenGastos">
+                      <td>{{ ordenGasto.numOrden }}</td>
+                      <td>{{ ordenGasto.certificadoPresupuestario.descripcion }}</td>
+                      <td>{{ ordenGasto.contrato.contPrecio }}</td>
+                      <td>{{ ordenGasto.contrato.modo_pago }}</td>
+                      <td>{{ ordenGasto.precioUnitario }}</td>
+                      <td>{{ ordenGasto.subtotal }}</td>
+                      <td>{{ ordenGasto.iva }}</td>
+                      <td>{{ ordenGasto.otroImpuesto }}</td>
+                      <td>{{ ordenGasto.total }}</td>
+                      <td>{{ ordenGasto.codPresupuestario }}</td>
+                      <td>{{ ordenGasto.descripcion }}</td>
+                      <td>{{ ordenGasto.valCert }}</td>
+                      <td>{{ ordenGasto.afectuar }}</td>
+                      <td>{{ ordenGasto.saldo }}</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>

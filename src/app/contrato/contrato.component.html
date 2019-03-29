@@ -1,0 +1,208 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-header card-header-danger">
+        <h4 class="card-title">Ordenes De Gasto</h4>
+        <p class="card-category">
+          Sistema para generar ordesnes de pagos ESPE.
+        </p>
+        <div class="row">
+          <div class="subitem col-lg-6 rowup col-md-3 col-sm-3"></div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-body">
+          <table class="table">
+            <div class="col-12">
+              <table class="table">
+                <div class="col-12">
+                  <form class="col s6">
+
+
+                   <th>
+                     <!-- <tr *ngFor="let ordenGasto of ordenGastos"> -->
+                          Tipo de Pago
+                          <select name="Tipo de pago" id="Tipo_contrato" class="form-control">
+                              <option selected>Mensual fijo </option>                             
+                              <option selected>Mensaul por Dia</option>
+                              <option selected>100%</option>                                                      
+                              </select>
+                          <div style="margin-left: 30px">
+                          </div>  
+                          <div style="margin-left: 1px">
+                          </div>    
+                        </th>
+
+                    <th>
+                      certId
+                      <input [(ngModel)]="contrato.idContrato" type="number" id="Ruc" name="Ruc"
+                        placeholder="Ruc" mainlength="15" maxlength="100 " class="form-control" size="25" required />                    
+
+                    <th>
+                      contrato
+                      <input [(ngModel)]="contrato.proveedor" type="number" id="OrdG" name="OrdG"
+                        placeholder="Orden de Gasto" mainlength="15" maxlength="100 " class="form-control" size="25" required />                     
+                    </th>
+
+                    <th>
+                      mantenimiento
+                      <input [(ngModel)]="contrato.tipCont" type="number" id="OrdG" name="OrdG"
+                        placeholder="Orden de Gasto" mainlength="15" maxlength="100 " class="form-control" size="25" required />                     
+                    </th>
+                    
+                    <th>
+                      valor
+                      <input [(ngModel)]="contrato.numCont" type="number" id="OrdG" name="OrdG"
+                        placeholder="Orden de Gasto" mainlength="15" maxlength="100 " class="form-control" size="25" required />                     
+                    </th>
+
+                     
+                        <div class="col-12">
+
+                         <th>
+                            objeto
+                            <input [(ngModel)]="contrato.numCont" type="number" id="Orden" name="Orden"
+                              placeholder="Orden" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                            
+                          </th>
+    
+                          <th>
+                              codigo
+                              <input [(ngModel)]="contrato.contFecha" type="text" id="Descripcion" name="Descripcion" placeholder="Descripcion"
+                                 mainlength="15" maxlength="666" class="form-control" size="80" required />
+                             
+                          </th>
+                         
+                          <th>
+                              descripcion
+                              <input [(ngModel)]="contrato.contPlazo" type="number" id="Cantidad" name="Cantidad"
+                                placeholder="Cantidad" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                              
+                          </th>
+                          
+
+                          
+                          <th>
+                              ruc
+                              <input [(ngModel)]="contrato.contGarantec" type="number" id="PreUni" name="PreUni"
+                                placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                              
+                          </th>
+                          
+                          <th>
+                            ruc
+                            <input [(ngModel)]="contrato.ustracontAdmi" type="number" id="PreUni" name="PreUni"
+                              placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                            
+                        </th>
+                        
+                        <th>
+                          ruc
+                          <input [(ngModel)]="contrato.contTec" type="number" id="PreUni" name="PreUni"
+                            placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                          
+                      </th>
+                      
+                      <th>
+                        ruc
+                        <input [(ngModel)]="contrato.contPrecio" type="number" id="PreUni" name="PreUni"
+                          placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                        
+                    </th>
+                    
+                    <th>
+                      ruc
+                      <input [(ngModel)]="contrato.contModPag" type="number" id="PreUni" name="PreUni"
+                        placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                      
+                  </th>
+                        
+                  
+                  <th>
+                    ruc
+                    <input [(ngModel)]="contrato.contFechaIni" type="number" id="PreUni" name="PreUni"
+                      placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                    
+                </th>
+                
+                <th>
+                  ruc
+                  <input [(ngModel)]="contrato.contFechaFin" type="number" id="PreUni" name="PreUni"
+                    placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                  
+              </th>
+              
+              <th>
+                ruc
+                <input [(ngModel)]="contrato.contMant" type="number" id="PreUni" name="PreUni"
+                  placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+                
+            </th>
+            
+            <th>
+              ruc
+              <input [(ngModel)]="contrato.contFechaIniMan" type="number" id="PreUni" name="PreUni"
+                placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+              
+          </th>
+          
+          <th>
+            ruc
+            <input [(ngModel)]="contrato.contFechaFinMan" type="number" id="PreUni" name="PreUni"
+              placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+            
+        </th>
+        
+        <th>
+          ruc
+          <input [(ngModel)]="contrato.contObjeto" type="number" id="PreUni" name="PreUni"
+            placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+          
+      </th>
+      
+      <th>
+        ruc
+        <input [(ngModel)]="contrato.contFechaActDef" type="number" id="PreUni" name="PreUni"
+          placeholder="Precio Unitario" mainlength="15" maxlength="100 " class="form-control" size="10" required />
+        
+    </th>
+                       
+
+                       <button type="button" class="btn btn-success"(click)="crearOActualizarContrato(contrato)">enviar</button>
+                      </div>
+  </form>
+  
+  
+  <style type="text/css">
+    option {
+      font-family: Verdana, Arial;
+      font-size: 12px;
+      background-color: #e9e9e9;
+    }
+  </style>
+  </div>
+  </table>
+  </div>
+
+              <!-- <table class="table">
+                <th>ordenGasto</th>
+                <th>descripcion</th>
+                <th>datosempleado</th>
+                <th>certifiado</th>
+                <th></th>
+                <th></th>
+
+                <tr *ngFor="let ordenGasto of ordenGastos">
+                  <td>{{ ordenGasto.afectuar }}</td>
+                  <td>{{ ordenGasto.codPresupuestario }}</td>
+                  <td>{{ ordenGasto.descripcion }}</td>
+                  <td>{{ ordenGasto.iva }}</td>
+                  <td>{{ ordenGasto.certificadoPresupuestario.codigo }}</td>
+                </tr>
+              </table> -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
